@@ -39,9 +39,9 @@ public class VoiceRecorder {
                 recorder = null;
             }
             recorder = new MediaRecorder();
-            recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-            recorder.setOutputFormat(MediaRecorder.OutputFormat.AMR_NB);
-            recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+            recorder.setAudioSource(MediaRecorder.AudioSource.MIC);//音频源
+            recorder.setOutputFormat(MediaRecorder.OutputFormat.AMR_NB);// 音频输出格式
+            recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);//音频编码
             recorder.setAudioChannels(1); // MONO
             recorder.setAudioSamplingRate(8000); // 8000Hz
             recorder.setAudioEncodingBitRate(64); // seems if change this to

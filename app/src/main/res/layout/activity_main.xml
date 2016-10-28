@@ -1,70 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/tv_main_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#12b8f6"
         android:padding="10dp"
-        android:text="录音/播放"
-        android:textColor="#ffffff"
-        android:textSize="16sp" />
+        android:text="视频/音频"
+        android:textColor="#ffffff" />
 
-    <TextView
-        android:id="@+id/tv_record"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_main_voice"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginRight="142dp"
-        android:padding="10dp"
-        android:text="点击说话"
-        android:textSize="14sp" />
-    <ListView
-        android:id="@+id/lv"
-        android:layout_below="@+id/tv_title"
+        android:layout_below="@+id/tv_main_title"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="音频" />
+
+    <Button
+        android:id="@+id/btn_main_vodio"
         android:layout_width="match_parent"
-        android:layout_above="@+id/rl"
-        android:background="#fff"
-        android:layout_height="wrap_content"></ListView>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_main_voice"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="视频" />
 
-    <RelativeLayout
-        android:id="@+id/rl"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_alignParentBottom="true"
-        android:background="#fefefe">
-
-        <ImageView
-            android:id="@+id/iv_speak"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:padding="10dp"
-            android:src="@drawable/record_normal" />
-
-        <TextView
-            android:id="@+id/tv_prompt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/iv_speak"
-            android:gravity="center"
-            android:paddingTop="10dp"
-            android:text="按住说话" />
-
-        <TextView
-            android:id="@+id/tv_time"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="10dp"
-            android:text="00:00" />
-    </RelativeLayout>
 </RelativeLayout>
